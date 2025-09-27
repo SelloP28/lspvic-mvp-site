@@ -1,0 +1,29 @@
+# Node.js/React (frontend)
+node_modules/
+build/
+*.log
+.env
+dist/
+npm-debug.log*
+
+# Python/Flask (backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.sqlite3  # Database file (if generated)
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Misc
+*.swp
+*~
