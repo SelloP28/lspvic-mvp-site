@@ -84,3 +84,48 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background: rgba(30, 30, 30, 0.95) !important;
+}
+
+.dark-mode .nav-link {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .card {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.dark-mode .card-header {
+  background: linear-gradient(135deg, #1e3a5f, #2d5a3d) !important;
+  color: #e0e0e0;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background: #333;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.dark-mode .footer {
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%) !important;
+}
+
+.dark-mode .accordion-button {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.dark-mode .accordion-body {
+  background: #333;
+  color: #e0e0e0;
+}

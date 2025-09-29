@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';  // Custom styles
@@ -12,10 +12,25 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedMode);
+    document.body.classList.toggle('dark-mode', savedMode);
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem('darkMode', newMode);
+    document.body.classList.toggle('dark-mode', newMode);
+  };
+
   return (
     <Router>
       <div className="app-wrapper">
-        <Navbar />
+        <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />

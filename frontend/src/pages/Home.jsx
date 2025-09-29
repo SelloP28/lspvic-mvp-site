@@ -13,9 +13,9 @@ function Home() {
     return (
         <div className="page-container">
             {/* Hero Section */}
-            <section className="hero-section">
+            <section className="hero-section" style={{ paddingTop: '100px' }}>
                 <Container>
-                    <div className={`hero-content ${isVisible ? 'fade-in-up' : ''}`}>
+                    <div className={`text-center mb-5 ${isVisible ? 'fade-in-up' : ''}`}>
                         <h1 className="hero-title floating">
                             Certified Solar Installations & Cleaning
                         </h1>

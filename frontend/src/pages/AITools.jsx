@@ -35,10 +35,10 @@ function AITools() {
         try {
             const res = await axios.post('http://localhost:5000/forecast', values);
             setResult(res.data);
-            setError(null);
         } catch (err) {
             console.error('Prediction error:', err);
-            setError('AI prediction failed. Please check your backend server is running or try again later.');
+            const errorMsg = err.response ? err.response.data.error : 'AI prediction failed. Check backend logs or try again.';
+            setError(errorMsg);
         } finally {
             setLoading(false);
         }
@@ -276,7 +276,7 @@ function AITools() {
                                 <span style={{ fontSize: '1.5rem', marginRight: '10px' }}>📊</span>
                                 AI Forecast Results
                             </span>
-                            <Badge bg="light" text="dark" style={{ fontSize: '0.9rem' }}>
+                            <Badge bg="light" className="text-dark">
                                 Generated Now
                             </Badge>
                         </div>
