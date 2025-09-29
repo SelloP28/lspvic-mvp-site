@@ -4,7 +4,7 @@ import { Navbar as BSNavbar, Nav } from 'react-bootstrap';
 function Navbar() {
     return (
         <BSNavbar bg="light" expand="lg">
-            <BSNavbar.Brand href="/">LSPVIC</BSNavbar.Brand>  LangaAI PV Installations and Cleaning (LSPVIC)
+            <BSNavbar.Brand href="/">LangaAI PV Installations and Cleaning </BSNavbar.Brand>
             <BSNavbar.Toggle aria-controls="basic-navbar-nav" />
             <BSNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
