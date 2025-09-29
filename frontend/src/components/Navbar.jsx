@@ -57,35 +57,35 @@ function Navbar({ toggleDarkMode, darkMode }) {
                             className="nav-link px-3"
                             style={{ fontWeight: '500' }}
                         >
-                            🏠 Home
+                             Home
                         </Nav.Link>
                         <Nav.Link
                             href="/services"
                             className="nav-link px-3"
                             style={{ fontWeight: '500' }}
                         >
-                            ⚡ Services
+                             Services
                         </Nav.Link>
                         <Nav.Link
                             href="/ai-tools"
                             className="nav-link px-3"
                             style={{ fontWeight: '500' }}
                         >
-                            🤖 AI Tools
+                             AI Tools
                         </Nav.Link>
                         <Nav.Link
                             href="/about"
                             className="nav-link px-3"
                             style={{ fontWeight: '500' }}
                         >
-                            👨‍💼 About
+                             About
                         </Nav.Link>
                         <Nav.Link
                             href="/contact"
                             className="nav-link px-3"
                             style={{ fontWeight: '500' }}
                         >
-                            📞 Contact
+                             Contact
                         </Nav.Link>
                         <Nav.Link
                             onClick={toggleDarkMode}

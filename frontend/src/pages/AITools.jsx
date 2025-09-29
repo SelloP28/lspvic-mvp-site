@@ -48,7 +48,6 @@ function AITools() {
         <Container className="page-container" style={{ paddingTop: '100px' }}>
             {/* Hero Section */}
             <div className={`text-center mb-5 ${isVisible ? 'fade-in-up' : ''}`}>
-                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🤖</div>
                 <h1 style={{
                     fontSize: '3rem',
                     fontWeight: '900',
